@@ -1,14 +1,14 @@
 # BMWCanBridge
-#### How to retrofit vin-coded modules to modern bmws
+#### Retrofiting/swapping night vision and other modules to modern bmws
 
+Did you damage the very expensive night vision camera on your bmw? Or are you, like me, blind as a bat at night and would like to have one? It turns out with an arduino and some C++ you can retrofit the system to most modern bmws:
 
-As it turns out, the night vision module, along with others (CIC, NBT navigation etc) that listen to the k-can bus, is coded directly to the vin number of the original car and rufuses to work if it receives another vin. Specifically, all these modules are listening for 7 byte long 0x380 frames that encode the last 7 digits of the vin as ascii hex values. 
-
+###### Bit of technical info
+The night vision module, along with others that connect to k-bus (CIC, NBT navigation etc), is coded directly to the vin number of the original car and rufuses to work if it receives another vin. Specifically, all these modules are listening for 7 byte long 0x380 frames that encode the last 7 digits of the vin as ascii hex values. 
 
 Arduino to the rescue: The good folks at CopperHill Technologies make a [dual channel can bus shield](http://copperhilltech.com/arduino-based-ecu-development-board-with-dual-can-bus-interface/) for the arduino due that allows you to [intercept and change the vin frames](https://en.wikipedia.org/wiki/Man-in-the-middle_attack) to match whatever the modules are expecting. 
 
-
-One caveat with the night vision is that *both the camera and the module* have to come from the same donor. There is an extra layer of security between the two and the communication doesn't happen over can bus. 
+One caveat with the night vision, however: *both the camera and the module* have to come from the same donor. There is an extra layer of security between the two and the communication doesn't happen over k-can bus. 
 
 
 
