@@ -13,7 +13,7 @@ The good folks at CopperHill Technologies make a [dual channel can bus shield](h
 
 
 
-###### Wiring and set
+###### Wiring and setup
 To wire up the arduino, tap any k-can wires (yellow/black twisted pair on e60 cars, there's one right under the glovebox) and run that into CAN1 port on the module, *without* any terminating resistance. Then run another set of can high/can low wires from the module you'd like to install (eg the night vision controller) to CAN2 port and add 120ohm resistor from each wire to ground. The K-can lines on bmws use low speed / fault tolerant can-bus spec, so termination does not happen across the two can lines. To power the arduino, you can use something like the amplifier 12v pin on the CCC nav unit (pin 13) that goes hot whenever you unlock the car.
 
 ![Wiring diagram](https://raw.githubusercontent.com/pavelmalik/BMWCanBridge/master/attachment.jpeg)
