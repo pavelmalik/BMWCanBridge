@@ -9,7 +9,7 @@ The night vision module, along with others that connect to k-bus (CIC, NBT navig
 ###### Arduino to the rescue
 The good folks at CopperHill Technologies make a [dual channel can bus shield](http://copperhilltech.com/arduino-based-ecu-development-board-with-dual-can-bus-interface/) for the arduino due that allows you to [intercept and change the vin frames](https://en.wikipedia.org/wiki/Man-in-the-middle_attack) to match whatever the modules are expecting. 
 
-**One caveat for the night vision application: *both the camera and the module* have to come from the same donor. There is an extra layer of security between the two and the communication doesn't happen over k-can bus.**
+>One caveat for the night vision application: *both the camera and the module* have to come from the same donor. There is an extra layer of security between the two and the communication doesn't happen over k-can bus.
 
 
 
