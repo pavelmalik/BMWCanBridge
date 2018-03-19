@@ -1,5 +1,5 @@
 # BMWCanBridge
-Arduino Due solution for retrofitting vin-coded modules to BMW cars, in particular handy for retrofiting or repairing your night vision camera. 
+##Arduino Due solution for retrofitting vin-coded modules to BMW cars, in particular handy for retrofiting or repairing your night vision camera. 
 
 
 As it turns out, the night vision module, along with others (CIC, NBT navigation etc) that listen to the k-can bus, is coded directly to the vin number of the original car and rufuses to work if it receives another vin. Specifically, all these modules are listening for 7 byte long 0x380 frames that encode the last 7 digits of the vin as ascii hex values. 
