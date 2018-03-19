@@ -1,7 +1,7 @@
 # BMWCanBridge
 #### Retrofiting/swapping night vision and other modules to modern bmws
 
-Did you damage the very expensive night vision camera on your bmw? Or are you, like me, blind as a bat at night and would like to have one? It turns out with an arduino and some C++ you can retrofit the system to most modern bmws:
+Did you damage the very expensive night vision camera on your bmw? Or are you, like me, blind as a bat at night and would like to have a night vision camera? It turns out with an arduino and some C++ you can retrofit the system to most modern bmws:
 
 ###### Bit of technical info
 The night vision module, along with others that connect to k-bus (CIC, NBT navigation etc), is coded directly to the vin number of the original car and rufuses to work if it receives another vin. Specifically, all these modules are listening for 7 byte long 0x380 frames that encode the last 7 digits of the vin as ascii hex values. 
