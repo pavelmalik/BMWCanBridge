@@ -34,3 +34,6 @@ Once it's all wired up, grab the BMWCanBridge sketch code from github, edit the 
 
 
 And a handy factory [retrofit guide](https://www.bimmerfest.com/forums/attachment.php?attachmentid=181022&d=1239472676)
+
+![NVE Module](https://raw.githubusercontent.com/pavelmalik/BMWCanBridge/master/module.jpg)
+![NVC Camera](https://raw.githubusercontent.com/pavelmalik/BMWCanBridge/master/camera.jpg)
