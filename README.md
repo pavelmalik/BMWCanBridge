@@ -38,6 +38,7 @@ There's a slight difference in wiring - pins 2 (-) and 4 (+) are feeding the com
 
 To enable the compositive video feed, CIC needs to be coded with NCSExpert with the following:
 >NVC wert_21
+
 >TV wert_21
 
 
