@@ -1,5 +1,5 @@
 # BMWCanBridge
-#### Retrofiting/swapping night vision and other modules to modern bmws
+#### Retrofiting/swapping night vision NIVI and other modules to modern bmws
 
 Did you damage the very expensive night vision camera on your bmw? Or are you, like me, blind as a bat when it's dark out and would like to have a night vision camera? It turns out with an arduino and some C++ you can retrofit the system to most modern bmws:
 
@@ -31,6 +31,15 @@ Once it's all wired up, grab the BMWCanBridge sketch code from github, edit the 
 * 61130005199 6x pins for the camera connector
 * 61138364666 18 pol connector for the night vision controller (AMP 1-963616-1) - tons of bmws use them
 * 61138364662 Cap thingy with lever for the connector above 
+
+
+###### Retrofitting with CIC
+There's a slight difference in wiring - pins 2 (-) and 4 (+) are feeding the composite video on the CCC unit, compared to pins 2 (+) and 12 (-) on the CIC. In other words, going from CCC to CIC, pin 4 wire goes to pin 2 and pin 2 wire goes to pin 12. 
+
+To enable the compositive video feed, CIC needs to be coded with NCSExpert with the following
+'NVC wert_21
+'TV wert_21
+
 
 
 And a handy factory [retrofit guide](https://www.bimmerfest.com/forums/attachment.php?attachmentid=181022&d=1239472676)
