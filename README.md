@@ -37,8 +37,8 @@ Once it's all wired up, grab the BMWCanBridge sketch code from github, edit the 
 There's a slight difference in wiring - pins 2 (-) and 4 (+) are feeding the composite video on the CCC unit, compared to pins 2 (+) and 12 (-) on the CIC. In other words, going from CCC to CIC, pin 4 wire goes to pin 2 and pin 2 wire goes to pin 12. 
 
 To enable the compositive video feed, CIC needs to be coded with NCSExpert with the following
-'NVC wert_21
-'TV wert_21
+```NVC wert_21
+TV wert_21```
 
 
 
